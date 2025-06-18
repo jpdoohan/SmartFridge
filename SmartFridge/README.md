@@ -1,7 +1,5 @@
 # DotNet 9 Base MVC Solution
 
-This .NET project ```SmartFridge``` provides a solution containing separate Data, Test and Web(MVC) projects. When installed and used to create a new project, all references to SmartFridge will be replaced with the name of your project.
-
 ## Data Project
 
 The Data project encapsulates all data related concerns and provides data entity (database) and implementations of following services:
@@ -118,25 +116,7 @@ app.UseAuthorization();
 
     An example of usage for both can be found in the ```UserController.Index``` action and view ```User/Index.cshtml```.
 
-## Install SmartFridge
 
-To install this solution as a smartfridge (smartfridge name is **termonbase**)
-
-1. Download current version of the smartfridge
-
-    ```$ git clone https://github.com/termon/DotNetSmartFridgeBase.git```
-
-2. Install the smartfridge so it can be used by ```dotnet new``` command. Use the path (i.e the directory location)to the cloned smartfridge directory without trailing '/'
-
-    Linux/macOS
-
-    ```$ dotnet new install /path/DotNetSmartFridgeBase```
-
-    Windows
-
-    ```c:> dotnet new install c:\path\DotNetSmartFridgeBase```
-
-3. Once installed you can create a new project using this smartfridge.
 
     ```dotnet new termonbase -n SolutionName```
 
